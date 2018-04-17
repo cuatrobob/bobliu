@@ -14,6 +14,6 @@ express()
       debug: true,
     })
   )
-  .use(express.static(path.join(__dirname, 'public')))
+  .use(express.static(__dirname + '/public'))
   .get('/', (req, res) => res.render('pages/index'))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))

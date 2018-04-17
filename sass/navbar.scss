@@ -1,0 +1,75 @@
+.navbar {
+  background-color: #333333 !important;
+  padding: 0.5rem 1rem;
+
+  .navbar-brand {
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: left;
+  }
+  .nav-link {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    text-align: left;
+    text-transform: uppercase;
+
+    :hover {
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    li.active .nav-link {
+    }
+
+  }
+
+  .navbar-toggler {
+    padding: 0;
+    border-style: none;
+    outline: none;
+
+    .toggler-top {
+      transform: rotate(-135deg);
+      margin: 6px 0 -12px 0;
+    }
+    .toggler-middle {
+      opacity: 0;
+      width: 0;
+    }
+    .toggler-bottom {
+      transform: rotate(135deg);
+      margin-bottom: 6px;
+    }
+
+    span {
+      display: block;
+      height: 2px;
+      width: 22px;
+      border-radius: 2px;
+      background-color: #fff;
+      margin-top: 4px;
+      transition: all 0.2s;
+    }
+
+    :focus {
+      outline: none;
+    }
+
+    :hover {
+      cursor: pointer;
+    }
+  }
+  .navbar-toggler.collapsed .toggler-top {
+    transform: rotate(0);
+    margin: 0;
+  }
+  .navbar-toggler.collapsed .toggler-middle {
+    opacity: 1;
+    width: 100%;
+  }
+  .navbar-toggler.collapsed .toggler-bottom {
+    transform: rotate(0);
+    margin-bottom: 0;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */
