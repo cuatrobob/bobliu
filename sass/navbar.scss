@@ -5,20 +5,21 @@
   .navbar-brand {
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     text-align: left;
+    padding-bottom: 8px;
   }
   .nav-link {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
     font-weight: 600;
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     text-align: left;
-    text-transform: uppercase;
+    text-transform: capitalize;
 
     :hover {
       transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    li.active .nav-link {
+    li.active {
     }
 
   }
